@@ -1,0 +1,203 @@
+/* import global css from global.css file */
+@import url(./global.css);
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg > .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .navbar-expand-lg > .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-flow: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-lg .navbar-nav-wrap-content-left {
+    display: flex;
+    padding-left: 7rem;
+  }
+
+  .navbar-expand-lg > .container {
+    flex-wrap: nowrap;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-brand-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    margin-right: 0;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  .navbar-brand-text h1 {
+    font-size: 18px;
+  }
+
+  .mr-3 {
+    margin-right: 1rem !important;
+  }
+}
+
+
+
+// Navbar toogle icon
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  text-decoration: none;
+}
+
+.navbar-collapse .navbar-toggler {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse .navbar-toggler {
+    display: block;
+  }
+}
+
+.navbar-toggler span {
+  background: #000;
+  height: 0.125rem;
+  margin: 0.188rem 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  width: 25%;
+}
+
+span:nth-of-type(2) {
+  width: 40%;
+}
+
+.secondary-content {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.navbar-content-right {
+  margin-left: auto !important;
+  display: flex;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+// Avatar
+.avatar-img {
+  display: block;
+  max-width: 100%;
+  height: 50px;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 0.3125rem;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+}
+
+// Notifications
+.notify {
+  position: relative;
+}
+
+.notify .badge {
+  position: absolute;
+  top: -6px;
+  right: -9px;
+  border-radius: 50%;
+  background-color: var(--green);
+  color: var(--white);
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}

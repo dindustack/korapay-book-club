@@ -1,16 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required Meta Tags Always Come First -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Title -->
-    <title>Dashboard &mdash; Korapay Book Club</title>
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    
-</body>
+    <!-- Title -->
+    <title>Dashboard | Admin &mdash; Korapay Book Club</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ================= START NAVBAR ================================= -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Toggler - Hidden in larger screen size devices -->
+        <div class="navbar-toggler" type="button">
+          <span class="navbar-toggler-1"></span>
+          <span class="navbar-toggler-2"></span>
+          <span class="navbar-toggler-3"></span>
+        </div>
+
+        <!--Start Koropay BookClub Logo -->
+        <div class="navbar-brand-wrapper">
+          <a class="navbar-brand mr-3" href="/#">
+            <img src="/assets/images/logo.svg" alt="" />
+          </a>
+
+          <div class="d-none d-md-block">
+            <h1 class="mt-1 mb-0">Korapay Book Club</h1>
+            <span class="h6 text-muted">Admin</span>
+          </div>
+        </div>
+        <!--End Koropay BookClub Logo -->
+
+        <!--Start Secondary Content - Search box,icon,notification, avatar -->
+        <!-- Start Search bar -->
+        <div class="mx-auto">
+          <div class="d-none d-md-block">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Search books, genres, authors, etc."
+              />
+              <span class="search-icon">
+                <img src="./assets/images/search-icon.svg" alt="search-icon" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- End Search bar -->
+
+        <!--Start - icon,notification, avatar -->
+
+        <div class="navbar-content-right">
+          
+            <!--Start Search icon mobile view -->
+            <div class="nav-item d-block d-md-none">
+              <span class="search-icon">
+                <img src="./assets/images/search-icon.svg" alt="" />
+              </span>
+            </div>
+            <!--End Search icon mobile view -->
+
+            <!--Start Book icon -->
+            <div class="nav-item">
+              <img src="./assets/images/book-icon.svg" alt="book" />
+            </div>
+            <!--End Book icon -->
+
+
+            <!-- Start Notifications -->
+            <div class="nav-item notify position-relative">
+              <img src="./assets/images/bell.svg" alt="notifications" />
+              <span class="badge">3</span>
+            </div>
+            <!-- End Notifications -->
+
+
+            <!--Start Avatar -->
+            <div>
+              <img
+                src="./assets/images/image.png"
+                alt="avatar"
+                class="avatar-img"
+              />
+            </div>
+            <!--End Avatar -->
+    <!-- =================END NAVBAR ================================= -->
+
+    <!-- =================START MAIN SECTION ================================= -->
+
+
+          
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
