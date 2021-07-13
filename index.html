@@ -9,9 +9,13 @@
     <!-- Title -->
     <title>Dashboard | Admin &mdash; Korapay Book Club</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/logo.ico">
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -66,47 +70,167 @@
         <!--Start - icon,notification, avatar -->
 
         <div class="navbar-content-right">
-          
-            <!--Start Search icon mobile view -->
-            <div class="nav-item d-block d-md-none">
-              <span class="search-icon">
-                <img src="./assets/images/search-icon.svg" alt="" />
-              </span>
-            </div>
-            <!--End Search icon mobile view -->
+          <!--Start Search icon mobile view -->
+          <div class="nav-item d-block d-md-none">
+            <span class="search-icon">
+              <img src="./assets/images/search-icon.svg" alt="" />
+            </span>
+          </div>
+          <!--End Search icon mobile view -->
 
-            <!--Start Book icon -->
-            <div class="nav-item">
-              <img src="./assets/images/book-icon.svg" alt="book" />
-            </div>
-            <!--End Book icon -->
+          <!--Start Book icon -->
+          <div class="nav-item">
+            <img src="./assets/images/book-icon.svg" alt="book" />
+          </div>
+          <!--End Book icon -->
 
+          <!-- Start Notifications -->
+          <div class="nav-item notify position-relative">
+            <img src="./assets/images/bell.svg" alt="notifications" />
+            <span class="badge">3</span>
+          </div>
+          <!-- End Notifications -->
 
-            <!-- Start Notifications -->
-            <div class="nav-item notify position-relative">
-              <img src="./assets/images/bell.svg" alt="notifications" />
-              <span class="badge">3</span>
-            </div>
-            <!-- End Notifications -->
-
-
-            <!--Start Avatar -->
-            <div>
-              <img
-                src="./assets/images/image.png"
-                alt="avatar"
-                class="avatar-img"
-              />
-            </div>
-            <!--End Avatar -->
-    <!-- =================END NAVBAR ================================= -->
-
-    <!-- =================START MAIN SECTION ================================= -->
-
-
-          
+          <!--Start Avatar -->
+          <div>
+            <img
+              src="./assets/images/image.png"
+              alt="avatar"
+              class="avatar-img"
+            />
+          </div>
+          <!--End Avatar -->
         </div>
       </div>
     </nav>
+    <!-- =================END NAVBAR ================================= -->
+
+    <!-- =================START MAIN SECTION ================================= -->
+    <!--Start Sidebar navigation menu -->
+    <!--End Sidebar navigation menu -->
+    <section>
+    <aside class="aside aside-default d-none d-md-block">
+      <div class="aside-menu flex-column-fluid">
+        <div class="menu menu-column menu-fit mt-lg-2 mb-lg-0">
+          <div class="menu-fit hover-scroll-y mr-lg-n5 pr-lg-n5">
+              
+            <!-- Start Home Menu Link -->
+            <div class="menu-item">
+              <span class="menu-link menu-heading">Home</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-link menu-subheading">Profile</span>
+            </div>
+            <div class="menu-item">
+              <span class="menu-link">
+                <span class="menu-subheading">Notifications</span>
+                <span class="menu-badge">3</span>
+              </span>
+            </div>
+
+            <hr class="menu-divider" />
+            <!-- End Home Menu Link -->
+
+            <!-- Start Explore Menu Link -->
+
+            <div class="menu-item mt-3">
+                <span class="menu-link menu-heading">Explore</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading">Books</span>
+                  <span class="menu-title">273</span>
+                </span>
+              </div>
+
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading">Genres</span>
+                  <span class="menu-title">42</span>
+                </span>
+              </div>
+
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading">Authors</span>
+                  <span class="menu-title">106</span>
+                </span>
+              </div>
+
+              <hr class="menu-divider" />
+            <!-- End Explore Menu Link -->
+
+            <!-- Start MyBooks Menu Link -->
+
+              <div class="menu-item mt-3">
+                  <span class="menu-link menu-heading">My Books</span>
+                </div>
+                <div class="menu-item">
+                  <span class="menu-link">
+                    <span class="menu-subheading">Queued</span>
+                    <span class="menu-title">3</span>
+                  </span>
+                </div>
+                
+  
+                <div class="menu-item">
+                  <span class="menu-link">
+                    <span class="menu-subheading">Currently Borrowed</span>
+                    <span class="menu-title">0</span>
+                  </span>
+                </div>
+  
+                <div class="menu-item">
+                  <span class="menu-link">
+                    <span class="menu-subheading">Favourites</span>
+                    <span class="menu-title">19</span>
+                  </span>
+                </div>
+
+                <div class="menu-item">
+                    <span class="menu-link">
+                      <span class="menu-subheading">History</span>
+                    </span>
+                  </div>
+            <!-- End MyBooks Menu Link -->
+
+            <hr class="menu-divider" />
+
+            <!-- Start Admin Menu Link -->
+
+              <div class="menu-item mt-3">
+                  <span class="menu-link menu-heading">Admin</span>
+                </div>
+                <div class="menu-item">
+                  <span class="menu-link">
+                    <span class="menu-subheading">Book Requests</span>
+                    
+                    <span class="menu-badge">3</span>
+                  </span>
+                </div>
+  
+                <div class="menu-item">
+                  <span class="menu-link">
+                    <span class="menu-subheading">Members</span>
+                    <span class="menu-title">34</span>
+                  </span>
+                </div>
+  
+                <div class="menu-item">
+                  <span class="menu-link">
+                    <span class="menu-subheading"> Library Settings</span>
+                  </span>
+                </div>
+
+                
+            <!-- End Admin Menu Link -->
+              
+          </div>
+        </div>
+      </div>
+    
+    
+    </aside>
+</section>
   </body>
 </html>

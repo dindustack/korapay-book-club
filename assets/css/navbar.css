@@ -12,9 +12,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.25rem 0;
-  border: 1px solid #eeeeee;
-  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #eeeeee;
+  -webkit-box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
 }
 
 .navbar .container {
@@ -229,6 +229,7 @@ span:nth-of-type(2) {
   top: -6px;
   right: -9px;
   border-radius: 50%;
+  font-weight: 700;
   background-color: var(--green);
   color: var(--white);
   width: 18px;
@@ -240,5 +241,8 @@ span:nth-of-type(2) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=navbar.css.map */

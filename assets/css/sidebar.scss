@@ -1,0 +1,116 @@
+/* import global css from global.css file */
+@import url(./global.css);
+// .aside {
+//     min-height: 100vh;
+// }
+
+@media (min-width: 992px) {
+  .aside-menu {
+    width: 320px;
+    // height: 150px;
+    // background-color: red;
+    // position: fixed;
+    padding: 1rem;
+    box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .hover-scroll-y {
+    overflow-y: scroll;
+    position: relative;
+    border-right: 1px solid var(--muted);
+  }
+}
+
+.flex-column-fluid {
+  flex: 1 0 auto;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-column {
+  flex-direction: column;
+  width: 100%;
+}
+
+.hover-scroll-y {
+  overflow-y: scroll;
+  position: relative;
+  border-right: 0;
+}
+
+.menu-item {
+  display: block;
+  padding: 0.65rem 1rem;
+}
+
+.menu-heading {
+  font-weight: 500;
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 16px;
+  color: var(--black);
+}
+
+.menu-subheading {
+  font-weight: 400;
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--black);
+}
+
+.menu-link:hover {
+  color: var(--green) !important;
+}
+.menu-link.active {
+  color: var(--green) !important;
+}
+
+.menu-link {
+  display: flex;
+  cursor: pointer;
+
+  .menu-badge {
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10px;
+    width: 1.5rem;
+    height: 1.25rem;
+  }
+
+  .menu-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10px;
+    width: 1.5rem;
+    height: 1.25rem;
+  }
+}
+
+
+.menu-divider {
+    border: 1px solid #EEEEEE;
+    margin-bottom: 1rem;
+    width: 100%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
