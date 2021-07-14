@@ -1,28 +1,31 @@
-/* import global css from global.css file */
-@import url(./global.css);
-// .aside {
-//     min-height: 100vh;
+ /* import global css from global.css file */
+ @import url(./global.css);
+
+// .sidebar {
+//   position: fixed;
+//   top: 5rem;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 100;
+//   padding: 48px 0 0;
+//   box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
+  
 // }
 
-@media (min-width: 992px) {
-  .aside-menu {
-    width: 320px;
-    // height: 150px;
-    // background-color: red;
-    // position: fixed;
-    padding: 1rem;
-    box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
-  }
-
-  .hover-scroll-y {
-    overflow-y: scroll;
-    position: relative;
-    border-right: 1px solid var(--muted);
-  }
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
 }
 
-.flex-column-fluid {
-  flex: 1 0 auto;
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
 }
 
 .menu {
@@ -35,12 +38,6 @@
 .menu-column {
   flex-direction: column;
   width: 100%;
-}
-
-.hover-scroll-y {
-  overflow-y: scroll;
-  position: relative;
-  border-right: 0;
 }
 
 .menu-item {
@@ -114,3 +111,5 @@
     width: 100%;
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
+

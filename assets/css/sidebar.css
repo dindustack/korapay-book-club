@@ -1,23 +1,21 @@
 /* import global css from global.css file */
 @import url(./global.css);
-@media (min-width: 992px) {
-  .aside-menu {
-    width: 320px;
-    padding: 1rem;
-    -webkit-box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
-            box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
-  }
-  .hover-scroll-y {
-    overflow-y: scroll;
-    position: relative;
-    border-right: 1px solid var(--muted);
-  }
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+  -webkit-box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
 }
 
-.flex-column-fluid {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
 }
 
 .menu {
@@ -35,12 +33,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-}
-
-.hover-scroll-y {
-  overflow-y: scroll;
-  position: relative;
-  border-right: 0;
 }
 
 .menu-item {

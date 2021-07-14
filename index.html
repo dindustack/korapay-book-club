@@ -27,45 +27,49 @@
   </head>
   <body>
     <!-- ================= START NAVBAR ================================= -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <!-- Toggler - Hidden in larger screen size devices -->
-        <div class="navbar-toggler" type="button">
-          <span class="navbar-toggler-1"></span>
-          <span class="navbar-toggler-2"></span>
-          <span class="navbar-toggler-3"></span>
+    <header class="navbar navbar-expand-lg sticky-top flex-md-nowrap">
+
+      <!-- Start Toggler - Hidden in larger screen size devices -->
+      <div class="navbar-toggler" type="button">
+        <span class="navbar-toggler-1"></span>
+        <span class="navbar-toggler-2"></span>
+        <span class="navbar-toggler-3"></span>
+      </div>
+      <!-- End Toggler - Hidden in larger screen size devices -->
+
+      
+      <!--Start Koropay BookClub Logo -->
+      <div class="navbar-logo-wrapper">
+        <a class="navbar-logo mr-3" href="/#">
+          <img src="/assets/images/logo.svg" alt="" />
+        </a>
+
+        <div class="d-none d-md-block">
+          <h1 class="mt-1 mb-0">Korapay Book Club</h1>
+          <span class="h6 text-muted">Admin</span>
         </div>
+      </div>
+      <!--End Koropay BookClub Logo -->
 
-        <!--Start Koropay BookClub Logo -->
-        <div class="navbar-brand-wrapper">
-          <a class="navbar-brand mr-3" href="/#">
-            <img src="/assets/images/logo.svg" alt="" />
-          </a>
-
-          <div class="d-none d-md-block">
-            <h1 class="mt-1 mb-0">Korapay Book Club</h1>
-            <span class="h6 text-muted">Admin</span>
+      <!-- Start Search bar -->
+      <div class="mx-auto">
+        <div class="d-none d-md-block">
+          <div class="input-group">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search books, genres, authors, etc."
+            />
+            <span class="search-icon">
+              <img src="./assets/images/search-icon.svg" alt="search-icon" />
+            </span>
           </div>
         </div>
-        <!--End Koropay BookClub Logo -->
+      </div>
+      <!-- End Search bar -->
 
-        <!--Start Secondary Content - Search box,icon,notification, avatar -->
-        <!-- Start Search bar -->
-        <div class="mx-auto">
-          <div class="d-none d-md-block">
-            <div class="input-group">
-              <input
-                class="form-control"
-                type="text"
-                placeholder="Search books, genres, authors, etc."
-              />
-              <span class="search-icon">
-                <img src="./assets/images/search-icon.svg" alt="search-icon" />
-              </span>
-            </div>
-          </div>
-        </div>
-        <!-- End Search bar -->
+      
+        
 
         <!--Start - icon,notification, avatar -->
 
@@ -101,136 +105,137 @@
           </div>
           <!--End Avatar -->
         </div>
-      </div>
-    </nav>
+        <!-- End - icon,notification, avatar  -->
+        
+    </header>
     <!-- =================END NAVBAR ================================= -->
 
     <!-- =================START MAIN SECTION ================================= -->
-    <!--Start Sidebar navigation menu -->
-    <!--End Sidebar navigation menu -->
-    <section>
-    <aside class="aside aside-default d-none d-md-block">
-      <div class="aside-menu flex-column-fluid">
-        <div class="menu menu-column menu-fit mt-lg-2 mb-lg-0">
-          <div class="menu-fit hover-scroll-y mr-lg-n5 pr-lg-n5">
-              
-            <!-- Start Home Menu Link -->
-            <div class="menu-item">
-              <span class="menu-link menu-heading">Home</span>
-            </div>
-            <div class="menu-item">
-              <span class="menu-link menu-subheading">Profile</span>
+    <div class="dashboard-container">
+      <div class="row">
+        <nav class="col-md-3 d-none d-md-block sidebar sidebar-sticky">
+          <div class="position-sticky menu menu-column">
+             <!-- Start Home Menu Link -->
+          <div class="menu-item">
+            <span class="menu-link menu-heading">Home</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-link menu-subheading">Profile</span>
+          </div>
+          <div class="menu-item">
+            <span class="menu-link">
+              <span class="menu-subheading">Notifications</span>
+              <span class="menu-badge">3</span>
+            </span>
+          </div>
+
+          <hr class="menu-divider" />
+          <!-- End Home Menu Link -->
+
+          <!-- Start Explore Menu Link -->
+
+          <div class="menu-item mt-3">
+              <span class="menu-link menu-heading">Explore</span>
             </div>
             <div class="menu-item">
               <span class="menu-link">
-                <span class="menu-subheading">Notifications</span>
-                <span class="menu-badge">3</span>
+                <span class="menu-subheading">Books</span>
+                <span class="menu-title">273</span>
+              </span>
+            </div>
+
+            <div class="menu-item">
+              <span class="menu-link">
+                <span class="menu-subheading">Genres</span>
+                <span class="menu-title">42</span>
+              </span>
+            </div>
+
+            <div class="menu-item">
+              <span class="menu-link">
+                <span class="menu-subheading">Authors</span>
+                <span class="menu-title">106</span>
               </span>
             </div>
 
             <hr class="menu-divider" />
-            <!-- End Home Menu Link -->
+          <!-- End Explore Menu Link -->
 
-            <!-- Start Explore Menu Link -->
+          <!-- Start MyBooks Menu Link -->
 
             <div class="menu-item mt-3">
-                <span class="menu-link menu-heading">Explore</span>
+                <span class="menu-link menu-heading">My Books</span>
               </div>
               <div class="menu-item">
                 <span class="menu-link">
-                  <span class="menu-subheading">Books</span>
-                  <span class="menu-title">273</span>
+                  <span class="menu-subheading">Queued</span>
+                  <span class="menu-title">3</span>
                 </span>
               </div>
-
-              <div class="menu-item">
-                <span class="menu-link">
-                  <span class="menu-subheading">Genres</span>
-                  <span class="menu-title">42</span>
-                </span>
-              </div>
-
-              <div class="menu-item">
-                <span class="menu-link">
-                  <span class="menu-subheading">Authors</span>
-                  <span class="menu-title">106</span>
-                </span>
-              </div>
-
-              <hr class="menu-divider" />
-            <!-- End Explore Menu Link -->
-
-            <!-- Start MyBooks Menu Link -->
-
-              <div class="menu-item mt-3">
-                  <span class="menu-link menu-heading">My Books</span>
-                </div>
-                <div class="menu-item">
-                  <span class="menu-link">
-                    <span class="menu-subheading">Queued</span>
-                    <span class="menu-title">3</span>
-                  </span>
-                </div>
-                
-  
-                <div class="menu-item">
-                  <span class="menu-link">
-                    <span class="menu-subheading">Currently Borrowed</span>
-                    <span class="menu-title">0</span>
-                  </span>
-                </div>
-  
-                <div class="menu-item">
-                  <span class="menu-link">
-                    <span class="menu-subheading">Favourites</span>
-                    <span class="menu-title">19</span>
-                  </span>
-                </div>
-
-                <div class="menu-item">
-                    <span class="menu-link">
-                      <span class="menu-subheading">History</span>
-                    </span>
-                  </div>
-            <!-- End MyBooks Menu Link -->
-
-            <hr class="menu-divider" />
-
-            <!-- Start Admin Menu Link -->
-
-              <div class="menu-item mt-3">
-                  <span class="menu-link menu-heading">Admin</span>
-                </div>
-                <div class="menu-item">
-                  <span class="menu-link">
-                    <span class="menu-subheading">Book Requests</span>
-                    
-                    <span class="menu-badge">3</span>
-                  </span>
-                </div>
-  
-                <div class="menu-item">
-                  <span class="menu-link">
-                    <span class="menu-subheading">Members</span>
-                    <span class="menu-title">34</span>
-                  </span>
-                </div>
-  
-                <div class="menu-item">
-                  <span class="menu-link">
-                    <span class="menu-subheading"> Library Settings</span>
-                  </span>
-                </div>
-
-                
-            <!-- End Admin Menu Link -->
               
+
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading">Currently Borrowed</span>
+                  <span class="menu-title">0</span>
+                </span>
+              </div>
+
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading">Favourites</span>
+                  <span class="menu-title">19</span>
+                </span>
+              </div>
+
+              <div class="menu-item">
+                  <span class="menu-link">
+                    <span class="menu-subheading">History</span>
+                  </span>
+                </div>
+          <!-- End MyBooks Menu Link -->
+
+          <hr class="menu-divider" />
+
+          <!-- Start Admin Menu Link -->
+
+            <div class="menu-item mt-3">
+                <span class="menu-link menu-heading">Admin</span>
+              </div>
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading">Book Requests</span>
+                  
+                  <span class="menu-badge">3</span>
+                </span>
+              </div>
+
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading">Members</span>
+                  <span class="menu-title">34</span>
+                </span>
+              </div>
+
+              <div class="menu-item">
+                <span class="menu-link">
+                  <span class="menu-subheading"> Library Settings</span>
+                </span>
+              </div>
+
+              
+          <!-- End Admin Menu Link -->
+    
+            
           </div>
-        </div>
+        </nav>
       </div>
+
+    </div>
+    <!-- =================END MAIN SECTION ================================= -->
     
-    
-    </aside>
+  
 </section>
+
   </body>
 </html>
