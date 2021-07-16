@@ -39,6 +39,29 @@
   }
 }
 
+.all-cover {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem 1rem;
+}
+
+@media only screen and (max-width: 999px) {
+  .all-cover {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .all-cover {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1.5rem 1rem;
+  }
+}
+
 .book-card {
   position: relative;
   display: -webkit-box;
