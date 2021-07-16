@@ -1,0 +1,119 @@
+/* import global css from global.css file */
+@import url(./global.css);
+.dashboard-title {
+  text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  .book-grid {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 25%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.book-cover {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem 1rem;
+}
+
+@media only screen and (max-width: 999px) {
+  .book-cover {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .book-cover {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1.5rem 1rem;
+  }
+}
+
+.book-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  background-clip: border-box;
+  -webkit-transition: border-color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
+.book-card-image {
+  border-radius: 0;
+  width: 45%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-height: 15rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 576px) {
+  .book-card-body {
+    padding: 1.9875rem;
+  }
+}
+
+.book-card-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1.5rem 0.5rem;
+}
+
+.book-card-badge {
+  margin-bottom: 1rem !important;
+}
+
+.book-card-title {
+  font-weight: 700;
+  padding-top: 0.25rem !important;
+  margin-bottom: 0 !important;
+}
+
+.book-card-stats {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1.5rem;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.book-likes {
+  padding-right: 0.75rem;
+  opacity: 0.8;
+  border-right: 1px solid #dddddd;
+  height: 25px;
+}
+/*# sourceMappingURL=book-section.css.map */

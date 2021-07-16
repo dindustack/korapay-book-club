@@ -1,0 +1,64 @@
+{
+    "books": [
+    {
+        "id": "1",
+        "title": "The Effective Engineer",
+        "logo": "./assets/images/effective-engineer.png",
+        "author": "Edmond Lau",
+        "status": "Available",
+        "year": 2009,
+        "genre": "Productivity",
+        "ratings": 4.0,
+        "users": 31,
+        "likes": 29
+    },
+    {
+        "id": "2",
+        "title": "Built To Last",
+        "logo": "./assets/images/built-to-last.png",
+        "author": "Jim Collins, Jerry I.",
+        "status": "Borrowed Out",
+        "year": 2001,
+        "genre": "Business, Entrepreneurship",
+        "ratings": 3.0,
+        "users": 22,
+        "likes": 15
+    },
+    {
+        "id": "3",
+        "title": "Big Magic",
+        "logo": "./assets/images/big-magic.png",
+        "author": "Elizabeth Gilbert",
+        "status": "Borrowed Out",
+        "year": 2014,
+        "genre": "Motivational",
+        "ratings": 3.0,
+        "users": 44,
+        "likes": 12
+    },
+    {
+        "id": "4",
+        "title": "The Lean Startup",
+        "logo": "./assets/images/the-lean-startup.png",
+        "author": "Eric Reis",
+        "status": "Available",
+        "year": 2005,
+        "genre": "Startup",
+        "ratings": 4.0,
+        "users": 16,
+        "likes": 18
+    },
+    {
+        "id": "5",
+        "title": "Effective Python",
+        "logo": "./assets/images/effective-python.png",
+        "author": "Edmond Lau",
+        "status": "Available",
+        "year": 2009,
+        "genre": "Programming",
+        "ratings": 4.0,
+        "users": 19,
+        "likes": 25
+    }
+]
+}

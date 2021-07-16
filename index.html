@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/book-section.css" />
+    <!-- <link rel="stylesheet" href="bootstrap.min.css" /> -->
+
+    <!-- Flickity CSS -->
+    <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +33,6 @@
   <body>
     <!-- ================= START NAVBAR ================================= -->
     <header class="navbar navbar-expand-lg sticky-top flex-md-nowrap">
-
       <!-- Start Toggler - Hidden in larger screen size devices -->
       <div class="navbar-toggler" type="button">
         <span class="navbar-toggler-1"></span>
@@ -113,8 +117,9 @@
     <!-- =================START MAIN SECTION ================================= -->
     <div class="dashboard-container">
       <div class="row">
-        <nav class="col-md-3 d-none d-md-block sidebar sidebar-sticky">
-          <div class="position-sticky menu menu-column">
+        <!-- Start Sidebar -->
+        <div class="sidebar-column d-none d-md-block sidebar sidebar-sticky">
+          <div class="">
              <!-- Start Home Menu Link -->
           <div class="menu-item">
             <span class="menu-link menu-heading">Home</span>
@@ -228,7 +233,50 @@
     
             
           </div>
-        </nav>
+        </div>
+        <!-- End Sidebar -->
+
+        <!-- Start Book Dashboard  -->
+        <main class="book-column">
+          <div class="container">
+            <!-- Featured Books -->
+            <div class="mt-2 mb-3">
+              <h5 class="dashboard-title">featured books</h5>
+            </div>
+
+            <!-- Line Break -->
+            <hr class="menu-divider" />
+<!-- Start Carousel -->
+            <!-- <div class="carousel"
+  data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+  <img src="./assets/images/built to last.svg" alt="Built to last" />
+  <img src="./assets/images/effective engineer.png" alt="Effective" />
+  
+</div> -->
+<!-- End Carousel -->
+
+<!-- Start Recently Added -->
+<div class="mt-2 mb-3">
+  <h5 class="dashboard-title">recently added</h5>
+
+  <!-- Line Break -->
+  <hr class="menu-divider" />
+  <div class="book-cover" id="book-cover"></div>
+</div>
+<!-- End Recently Added -->
+
+<!-- Start All Books -->
+<div class="mt-2 mb-3">
+  <h5 class="dashboard-title">All Books</h5>
+
+  <!-- Line Break -->
+  <hr class="menu-divider" />
+  <div class="book-cover" id="book-cover"></div>
+</div>
+<!-- End All Books -->
+
+          </div>
+        </main>
       </div>
 
     </div>
@@ -238,4 +286,11 @@
 </section>
 
   </body>
+  <!-- Flickicity JS -->
+  <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+
+  <!-- Books JS -->
+  <script src="/assets/js/books.js"></script>
+
+  <script src="script.js"></script>
 </html>
