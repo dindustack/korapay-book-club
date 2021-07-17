@@ -9,12 +9,6 @@
           box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767.98px) {
-  .sidebar {
-    top: 5rem;
-  }
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;

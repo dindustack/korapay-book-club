@@ -1,20 +1,16 @@
 // Navigation on mobile view
 const sidebarOpen = document.querySelector(".navbar-toggler");
 const sidebarClose = document.querySelector(".navbar-arrow");
-const menu = document.querySelector(".sidebar-column");
-// const scrollLink = document.querySelectorAll(".scroll-link");
-// const navContainer = document.querySelector(".nav__menu");
+const menu = document.querySelector(".mobile-logo");
 
+// Open Sidebar in mobile view
 sidebarOpen.addEventListener("click", () => {
-  menu.classList.replace("d-none", "d-block");
-//   document.body.classList.add("active");
-//   navContainer.style.left = "0";
-//   navContainer.style.width = "30rem";
+  document.body.classList.add("active");
+  menu.classList.remove("d-none");
 });
 
+// Close Sidebar in mobile view
 sidebarClose.addEventListener("click", () => {
-  menu.classList.replace("d-block", "d-none");
-//   document.body.classList.remove("active");
-//   navContainer.style.left = "-30rem";
-//   navContainer.style.width = "0";
+  document.body.classList.remove("active");
+  menu.classList.add("d-none");
 });
