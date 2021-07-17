@@ -331,6 +331,7 @@ section {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: main;
+  padding: 0 0.5rem;
 }
 
 @media only screen and (max-width: 999px) {
@@ -341,6 +342,7 @@ section {
         grid-template-columns: 1fr;
     grid-gap: 1rem;
         grid-template-areas: "main";
+    padding: 0 0.5rem;
   }
 }
 /*# sourceMappingURL=global.css.map */

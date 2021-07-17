@@ -283,7 +283,7 @@ section {
   grid-template-columns: 1fr 4fr;
   grid-gap: 1rem;
   grid-template-areas: 
-    "sidebar main"
+    "sidebar main";
 }
 
 .sidebar-column {
@@ -291,7 +291,8 @@ section {
 }
 
 .book-column {
-  grid-area: main
+  grid-area: main;
+  padding: 0 0.5rem;
 }
 
 @media only screen and (max-width: 999px) {
@@ -300,6 +301,7 @@ section {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     grid-template-areas: 
-      "main"
+      "main";
+    padding: 0 0.5rem;
   }
 }
