@@ -279,73 +279,27 @@ section {
 
 // Dasbaoard styling
 .dashboard-container {
-  width: 100%;
-  padding-right: var(0, 0.75rem);
-  padding-left: var(1.5rem, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 1rem;
+  grid-template-areas: 
+    "sidebar main"
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(0 * -1);
-  margin-right: calc(1.5rem * -0.5);
-  margin-left: calc(1.5rem * -0.5);
-}
-.row > * {
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(1.5rem * 0.5);
-  padding-left: calc(1.5rem * 0.5);
-  margin-top: 0;
+.sidebar-column {
+  grid-area: sidebar;
 }
 
-// Responsive column for sidebar and book column
-@media (min-width: 768px) {
-  .sidebar-column {
-    flex: 0 0 auto;
-    width: 20%;
-  }
-
-  .book-column {
-    flex: 0 0 auto;
-    width: 75%;
-  }
+.book-column {
+  grid-area: main
 }
 
-// Responsive Container 
-.container {
-  width: 100%;
-  // padding-right: 1.5rem 0.75rem;
-  // padding-left: 1.5rem 0.75rem;
-  padding: 1rem;
-  // margin-right: auto;
-  // margin-left: auto;
-}
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
+@media only screen and (max-width: 999px) {
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: 
+      "main"
   }
 }

@@ -121,10 +121,27 @@
 
     <!-- =================START MAIN SECTION ================================= -->
     <div class="dashboard-container">
-      <div class="row">
+    
+       
         <!-- Start Sidebar -->
-        <div class="sidebar-column d-none d-md-block sidebar sidebar-sticky">
-          <div class="">
+        <div class="sidebar-column d-none d-md-block sidebar-sticky">
+            <!-- Mobile view arrow button and logo -->
+            <div class="d-none">
+              <div class="navbar-arrow mb-3" type="button">
+                <img src="./assets/images/arrow.svg" alt="">
+              </div>
+    
+              <div class="navbar-logo-wrapper mb-3">
+                <a class="navbar-logo mr-3" href="/#">
+                  <img src="/assets/images/logo.svg" alt="" />
+                </a>
+        
+                <div class="d-none d-md-block">
+                  <h1 class="mt-1 mb-0">Korapay Book Club</h1>
+                  <span class="h6 text-muted">Admin</span>
+                </div>
+              </div>
+            </div>
              <!-- Start Home Menu Link -->
           <div class="menu-item">
             <span class="menu-link menu-heading">Home</span>
@@ -237,13 +254,13 @@
           <!-- End Admin Menu Link -->
     
             
-          </div>
+          
         </div>
         <!-- End Sidebar -->
 
         <!-- Start Book Dashboard  -->
-        <main class="book-column">
-          <div class="container">
+        <div class="book-column">
+          <div class="">
             <!-- Featured Books -->
             <div class="mt-2 mb-3">
               <h5 class="dashboard-title">featured books</h5>
@@ -251,38 +268,33 @@
 
             <!-- Line Break -->
             <hr class="menu-divider" />
-<!-- Start Carousel -->
-            <!-- <div class="carousel"
-  data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-  <img src="./assets/images/built to last.svg" alt="Built to last" />
-  <img src="./assets/images/effective engineer.png" alt="Effective" />
-  
-</div> -->
-<!-- End Carousel -->
+          <!-- Start Carousel -->
+                    
+          <!-- End Carousel -->
 
-<!-- Start Recently Added -->
-<div class="mt-2 mb-3">
-  <h5 class="dashboard-title">recently added</h5>
+          <!-- Start Recently Added -->
+          <div class="mt-2 mb-3">
+            <h5 class="dashboard-title">recently added</h5>
 
-  <!-- Line Break -->
-  <hr class="menu-divider" />
-  <book-card class="book-cover"></book-card>
-</div>
-<!-- End Recently Added -->
+            <!-- Line Break -->
+            <hr class="menu-divider" />
+            <book-card class="book-cover"></book-card>
+          </div>
+          <!-- End Recently Added -->
 
-<!-- Start All Books -->
-<div class="mt-2 mb-3">
-  <h5 class="dashboard-title">All Books</h5>
+          <!-- Start All Books -->
+          <div class="mt-2 mb-3">
+            <h5 class="dashboard-title">All Books</h5>
 
-  <!-- Line Break -->
-  <hr class="menu-divider" />
-  <all-card class="all-cover"></all-card>
-</div>
-<!-- End All Books -->
+            <!-- Line Break -->
+            <hr class="menu-divider" />
+            <all-card class="all-cover"></all-card>
+          </div>
+          <!-- End All Books -->
 
           </div>
-        </main>
-      </div>
+        </div>
+    
 
     </div>
     <!-- =================END MAIN SECTION ================================= -->
@@ -299,6 +311,9 @@
   
   <!-- Search Input JS -->
   <script src="/assets/js/search.js"></script>
+  
+  <!-- Search Input JS -->
+  <script src="/assets/js/sidebar-mobile.js"></script>
 
   <script src="script.js"></script>
 </html>
