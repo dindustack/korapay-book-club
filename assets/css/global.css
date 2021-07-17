@@ -279,6 +279,38 @@ section {
   outline: none !important;
 }
 
+.search-results {
+  margin: 0;
+  padding: 1rem;
+  background: var(--white);
+  position: absolute;
+  border: 1px solid #EEEEEE;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+}
+
+.search-results li {
+  background: white;
+  list-style: none;
+  margin: 0;
+  padding: 0.625rem;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  font-size: 0.875rem;
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.search-text {
+  color: var(--black);
+}
+
 .dashboard-container {
   width: 100%;
   padding-right: var(0, 0.75rem);

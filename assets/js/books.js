@@ -1,3 +1,6 @@
+const bookCover = document.querySelector(".book-cover");
+const allBookCover = document.querySelector(".all-cover");
+
 // Fetch books from data.json
 async function getBooks() {
   try {
@@ -11,15 +14,13 @@ async function getBooks() {
   }
 }
 
-// Load Books
-const allBookCover = document.querySelector(".all-cover");
-
+// Load All Books
 window.addEventListener("DOMContentLoaded", async function () {
   const books = await getBooks();
   displayAllBookItems(books);
 });
 
-// Display recently added book items
+// Display all book
 const displayAllBookItems = (items) => {
   let displayAllBook = items.map(
     (book) => ` 
@@ -62,6 +63,7 @@ const displayAllBookItems = (items) => {
       `
   );
 
+  // Reusable component for all book items
   displayAllBook = displayAllBook.join("");
   if (allBookCover) {
     class AllBookCard extends HTMLElement {
@@ -74,15 +76,13 @@ const displayAllBookItems = (items) => {
   } 
 };
 
-
-const bookCover = document.querySelector(".book-cover");
-
+// Load Recently Added Book items
 window.addEventListener("DOMContentLoaded", async function () {
   const books = await getBooks();
   displayBookItems(books);
 });
 
-// Display book items
+// Display recently added books
 const displayBookItems = (items) => {
   let displayBook = items.map(
     (book) => ` 
@@ -124,7 +124,7 @@ const displayBookItems = (items) => {
       </div>
       `
   );
-
+// Create reusable components for recently added book items
   displayBook = displayBook.join("");
   if (bookCover) {
     class BookCard extends HTMLElement {
