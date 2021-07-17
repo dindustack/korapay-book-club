@@ -1,7 +1,8 @@
 const searchInput = document.querySelector(".form-control");
 const suggestions = document.querySelector(".search-results");
-// const everyBookCover = document.querySelector(".all-cover");
-// const addBookCover = document.querySelector(".book-cover");
+const searchIcon = document.querySelector(".search-icon");
+const everyBookCover = document.querySelector(".all-cover");
+const addBookCover = document.querySelector(".book-cover");
 
 // Fetch books from data.json
 const books = [];
@@ -35,13 +36,7 @@ function displayMatches() {
         regex,
         `<span class="search-text">${this.value}</span>`
       );
-      // if (bookName) {
-      //   everyBookCover.classList.remove(".d-none");
-      //   addBookCover.classList.remove(".d-none");
-      // } else {
-      //   everyBookCover.classList.add(".d-none");
-      //   addBookCover.classList.add(".d-none");
-      // }
+
       return `
         <li>
           <span>${bookName} - ${authorName}</span>
@@ -50,10 +45,16 @@ function displayMatches() {
     })
     .join("");
   suggestions.innerHTML = html;
-
-  
 }
 
 // Event listeners for the input box
 searchInput.addEventListener("change", displayMatches);
 searchInput.addEventListener("keyup", displayMatches);
+searchInput.addEventListener("input", (e) => {
+  const textResult = e.target.value;
+  if (textResult === "") {
+    suggestions.classList.add("d-none");
+  } else {
+    suggestions.classList.remove("d-none");
+  }
+});
