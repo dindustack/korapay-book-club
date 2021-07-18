@@ -6,16 +6,6 @@
   letter-spacing: 3px;
 }
 
-@media (min-width: 768px) {
-  .book-grid {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 25%;
-    margin-bottom: 1.5rem;
-  }
-}
-
 .book-cover {
   display: -ms-grid;
   display: grid;

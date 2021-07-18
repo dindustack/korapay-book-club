@@ -1,5 +1,26 @@
 /* import global css from global.css file */
 @import url(./global.css);
+.mobile-navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--white);
+  border-bottom: 1px solid #eeeeee;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
 .navbar {
   position: relative;
   z-index: 1;

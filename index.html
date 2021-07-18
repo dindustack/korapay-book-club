@@ -73,7 +73,6 @@
               type="text"
               placeholder="Search books, genres, authors, etc."
             />
-            <!-- Display search-results -->
             
             <span class="search-icon">
               <img src="./assets/images/search-icon.svg" alt="search-icon" />
@@ -86,15 +85,13 @@
       </div>
       <!-- End Search bar -->
 
-      
-        
 
         <!--Start - icon,notification, avatar -->
 
         <div class="navbar-content-right">
           <!--Start Search icon mobile view -->
           <div class="nav-item d-block d-md-none">
-            <span class="search-icon">
+            <span class="mobile-search-icon" type="button">
               <img src="./assets/images/search-icon.svg" alt="" />
             </span>
           </div>
@@ -123,9 +120,36 @@
           </div>
           <!--End Avatar -->
         </div>
-        <!-- End - icon,notification, avatar  -->
-        
+        <!-- End - icon,notification, avatar  -->    
     </header>
+
+     <!-- Start search input mobile view -->
+     <header class="d-none mobile-navbar">
+      <div class="header-arrow mb-3" type="button">
+        <img src="./assets/images/arrow.svg" alt="">
+      </div>
+    <!-- Start Input to search books -->
+      <div class="mx-auto">
+          <div class="mobile-input-group">
+            <input
+              class="mobile-form-control"
+              type="text"
+              placeholder="Search books, genres etc"
+            />
+            
+            <span class="search-icon">
+              <img src="./assets/images/search-icon.svg" alt="search-icon" />
+            </span>
+          </div>
+
+          <!-- Display search results -->
+          <ul class="mobile-search-results d-none"></ul>
+       
+      </div>
+    <!-- End  Input to search books -->
+
+    </header>
+    <!-- End search input mobile view -->
     <!-- =================END NAVBAR ================================= -->
 
     <!-- =================START MAIN SECTION ================================= -->
@@ -264,7 +288,7 @@
           <!-- End Admin Menu Link -->
           </div>
         </div>
-        <!--Start Mobile view arrow button and logo -->
+        <!--End Mobile view arrow button and logo -->
 
         <div class="sidebar-column d-none d-md-block sidebar-sticky">
            

@@ -7,14 +7,6 @@
   letter-spacing: 3px;
 }
 
-@media (min-width: 768px) {
-  .book-grid {
-    flex: 0 0 auto;
-    width: 25%;
-    margin-bottom: 1.5rem;
-  }
-}
-
 // recently added book sections
 .book-cover {
   display: grid;
