@@ -1,25 +1,28 @@
 /* import global css from global.css file */
 @import url(./global.css);
 
+// styling for section titles e.g ALL BOOKS
 .dashboard-title {
   text-transform: uppercase;
   line-height: 16px;
   letter-spacing: 3px;
 }
 
-// recently added book sections
+// recently added books section - desktop view
 .book-cover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem 1rem;
 }
 
+// recently added books section - tablet vie
 @media only screen and (max-width: 999px) {
   .book-cover {
     grid-template-columns: 1fr 1fr;
   }
 }
 
+// recently added books section - mobile view
 @media only screen and (max-width: 568px) {
   .book-cover {
     grid-template-columns: 1fr;
@@ -27,19 +30,21 @@
   }
 }
 
-// all books section
+// all books section - desktop view
 .all-cover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem 1rem;
 }
 
+// all books section - tablet view
 @media only screen and (max-width: 999px) {
   .all-cover {
     grid-template-columns: 1fr 1fr;
   }
 }
 
+// all books section - mobile view
 @media only screen and (max-width: 568px) {
   .all-cover {
     grid-template-columns: 1fr;

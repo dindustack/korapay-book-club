@@ -126,20 +126,6 @@ span:nth-of-type(2) {
   list-style: none;
 }
 
-@media (max-width: 991.98px) {
-  .navbar-expand-lg > .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-}
-
-@media (min-width: 991.98px) {
-  .navbar-expand-lg > .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-}
-
 @media (min-width: 992px) {
   .navbar-expand-lg {
     -ms-flex-flow: nowrap;
