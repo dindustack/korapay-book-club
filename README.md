@@ -6,3 +6,5 @@
  in the all books and recently added sections,this is to create a reusable component and reduce the lines of code.
 
 3. The third book on the featured book - "Big Magic" component shows the overlay
+
+4. The project was educative and fun.
