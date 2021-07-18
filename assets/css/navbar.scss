@@ -1,6 +1,7 @@
 /* import global css from global.css file */
 @import url(./global.css);
 
+// Navbar styling
 .navbar {
   position: relative;
   z-index: 1;
@@ -11,7 +12,7 @@
   padding: 1rem;
   background-color: var(--white);
   border-bottom: 1px solid #eeeeee;
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)
 }
 
 @media (min-width: 992px) {

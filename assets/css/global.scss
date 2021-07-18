@@ -329,6 +329,8 @@ section {
     display: block;
     background: var(--white);
     width: 75vw;
+    overflow-y: scroll;
+    // height: 100vh;
   }
 
   .navbar-arrow{

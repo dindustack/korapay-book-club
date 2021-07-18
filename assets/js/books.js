@@ -88,7 +88,7 @@ const displayBookItems = (items) => {
     (book) => ` 
       
       <div class="book-card">
-        <img src=${book.logo} alt="" class="book-card-image">
+        <img src=${book.logo} alt=${book.title} class="book-card-image">
         <div class="book-card-body">
             <span class="h6 ${getBookStatus(book.status)}" id="book-status">${
       book.status

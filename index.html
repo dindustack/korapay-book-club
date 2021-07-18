@@ -13,14 +13,23 @@
     <link rel="icon" href="./assets/images/logo.ico">
 
     <!-- CSS -->
+    <!-- Navbar CSS -->
     <link rel="stylesheet" href="assets/css/navbar.css" />
+
+    <!-- Global CSS -->
     <link rel="stylesheet" href="assets/css/global.css" />
+
+    <!-- Sidebar Menu CSS -->
     <link rel="stylesheet" href="assets/css/sidebar.css" />
+
+    <!-- Book Grid CSS -->
     <link rel="stylesheet" href="assets/css/book-section.css" />
-    <!-- <link rel="stylesheet" href="bootstrap.min.css" /> -->
+
+    <!--  Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/carousel.css" />
 
     <!-- Flickity CSS -->
-    <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -367,7 +376,6 @@
                 </span>
               </div>
 
-              
           <!-- End Admin Menu Link -->  
         </div>
         <!-- End Sidebar -->
@@ -380,10 +388,83 @@
               <h5 class="dashboard-title">featured books</h5>
             </div>
 
+            
+
             <!-- Line Break -->
             <hr class="menu-divider" />
           <!-- Start Carousel -->
-                    
+          <div class="carousel" data-flickity>
+            <div class="">
+              <img src="./assets/images/effective-engineer.png" alt="effective-engineer" class="carousel-image" />
+            </div>
+            <div class="">
+              <img src="./assets/images/built-to-last.png" alt="built-to-last.png" class="carousel-image"/>
+            </div>
+
+            <!-- Big Magic cover -->
+          <div>
+            <img src="./assets/images/big-magic.png" alt="big-magic" class="carousel-image"/>
+
+              <!-- Overlay ellipsis -->
+              <div class="overlay-ellipsis" type="button">
+                <img src="./assets/images/ellipsis.svg" alt="" class="carousel-ellipsis">
+              </div>
+
+              <!-- Carousel overlay details -->
+              <div class="overlay-detail d-none">
+                <!-- Overlay close button -->
+                <div class="overlay-close-button" type="button">
+                  <img src="./assets/images/close-details.svg" alt="">
+                </div>
+
+                <!-- Start Overlay book details -->
+                <div class="overlay-content">
+                 
+                    <span class="h6 text-red" id="book-status">Borrowed Out</span>
+                    <h1 class="book-card-title mt-2">Big Magic</h1>
+                    <h6 class="mb-0">Elizabeth Gilbert</h6>
+                    <span class="h6">2014</span>
+
+                    <div class="mt-2 d-none d-md-block">
+                      <h6 class="mb-0">Genre: Motivational</h6>
+                    <span class="h6">Labels: Creative</span>
+                    </div>
+                    <div class="book-card-stats">
+                        <div class="ratings">
+                          <span class="h6">Ratings: 4.0</span>
+                          <div class="d-flex">
+                            <img src="./assets/images/star-full.svg" alt="">
+                            <img src="./assets/images/star-full.svg" alt="">
+                            <img src="./assets/images/star-full.svg" alt="">
+                            <img src="./assets/images/star-full.svg" alt="">
+                            <img src="./assets/images/star-empty.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="book-likes mr-2"></div>
+                        <div class="mr-2">
+                        <h6 class="mb-0"><img src="./assets/images/user.svg" alt="" class="text-green"></h6>
+                        <span class="h6">44</span>
+        
+                        </div>
+                        <div>
+                        <h6 class="mb-0"><img src="./assets/images/love.svg" alt=""></h6>
+                        <span class="h6">12</span>
+                        </div>    
+                    </div>
+                
+                <!-- End Overlay book details -->
+              </div>
+              </div>
+          </div>
+
+          <div class="">
+            <img src="./assets/images/the-lean-startup.png" alt="the-lean-startup" class="carousel-image"/>
+          </div>
+
+          <div class="">    
+            <img src="./assets/images/effective-python.png" alt="effective-python" class="carousel-image"/>
+          </div>  
+        </div>
           <!-- End Carousel -->
 
           <!-- Start Recently Added -->
@@ -392,6 +473,8 @@
 
             <!-- Line Break -->
             <hr class="menu-divider" />
+
+            <!-- Recently added books component -->
             <book-card class="book-cover"></book-card>
           </div>
           <!-- End Recently Added -->
@@ -402,6 +485,8 @@
 
             <!-- Line Break -->
             <hr class="menu-divider" />
+
+            <!-- All books component -->
             <all-card class="all-cover"></all-card>
           </div>
           <!-- End All Books -->
@@ -409,16 +494,17 @@
           </div>
         </div>
     
-
     </div>
     <!-- =================END MAIN SECTION ================================= -->
     
-  
 </section>
 
   </body>
   <!-- Flickicity JS -->
-  <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+  <!-- Carousel JS -->
+  <script src="/assets/js/carousel.js"></script>
 
   <!-- Books JS -->
   <script src="/assets/js/books.js"></script>
@@ -428,6 +514,4 @@
   
   <!-- Search Input JS -->
   <script src="/assets/js/sidebar-mobile.js"></script>
-
-  <script src="script.js"></script>
 </html>

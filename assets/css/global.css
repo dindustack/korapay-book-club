@@ -369,6 +369,7 @@ section {
     display: block;
     background: var(--white);
     width: 75vw;
+    overflow-y: scroll;
   }
   .navbar-arrow {
     cursor: pointer;
