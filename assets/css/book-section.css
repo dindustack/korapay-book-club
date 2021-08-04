@@ -34,7 +34,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem 1rem;
+  gap: 1rem 1rem;
 }
 
 @media only screen and (max-width: 999px) {
